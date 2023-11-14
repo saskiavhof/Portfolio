@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body class="home">
+
+  <nav>
+    <div class="left-section">
+      <a href="home.html" class="home current">PORTFOLIO</a>
+    </div>
+    <div class="right-section">
+      <a href="home.html" class="home current">HOME</a>
+      <a href="about.html" class="about">ABOUT</a>
+      <a href="#" onclick="openResume()" class="resume">RESUME</a>
+    </div>
+  </nav>
+
+  <section class="intro-container">
+    <div class="left-cell">
+      <h1>Hi, I'm Saskia!<br>I design experiences that connect.</h1>
+      <h2>Currently, I am studying Digital Narrative and Interactive Design at the University of Pittsburgh and working as a UX/UI designer and researcher. My primary focus lies in exploring the impact of cross-cultural communication on interface design.</h2>
+      <h3>Saskia Van't Hof</h3>
+      <h3>UX/UI Designer and Web Developer</h3>
+    </div>
+    <div class="right-cell">
+      <img src="home/me.png" alt="Illustration of Saskia">
+    </div>
+  </section>
+
+  <section class="selected-works">
+    <h1>Selected Works</h1>
+    
+    <div class="selected-works-container">
+      <div class="selected-works-item">
+        <img src="mockups/InvolveMINT mockup.png" alt="InvolveMINT Work Image" class="work-image">
+        <h2>InvolveMINT ∙ UX/UI Design Intern</h2>
+        <h3>Reinventing the work verification feature</h3>
+      </div>
+      <div class="selected-works-item">
+        <img src="mockups/StoryWorlds Mockup 2.png" alt="Story Worlds Work Image" class="work-image">
+        <h2>StoryWorlds ∙ UX/UI Researcher</h2>
+        <h3>Developing an open-source knowledge graph</h3>
+      </div>
+      <div class="selected-works-item">
+        <img src="mockups/PGHMusicHall Mockup.png" alt="PGH Music Hall Work Image" class="work-image">
+        <h2>INFSCI 1420 ∙ UX/UI Designer</h2>
+        <h3>Creating a ticketing service for PGH Music Hall</h3>
+      </div>
+      <div class="selected-works-item">
+        <img src="mockups/PGHMusicHall Mockup.png" alt="Forbes & Fifth Work Image" class="work-image">
+        <h2>Forbes & Fifth ∙ Designer</h2>
+        <h3>Designing undergraduate research journals</h3>
+      </div>
+      <div class="selected-works-item">
+        <img src="mockups/PGHMusicHall Mockup.png" alt="Forbes & Fifth Work Image" class="work-image">
+        <h2>Capstone ∙ Web Developer</h2>
+        <h3>Programming an interactive website and game</h3>
+      </div>
+      <div class="selected-works-item">
+        <img src="mockups/PGHMusicHall Mockup.png" alt="Forbes & Fifth Work Image" class="work-image">
+        <h2>Forbes & Fifth ∙ Designer</h2>
+        <h3>Designing an educational kiosk</h3>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="email-container">
+        <span id="copyEmail" class="copy-symbol" onclick="copyToClipboard('sav78@pitt.edu')">sav78@pitt.edu</span>
+        <img id="copyIcon" src="icons/copy.svg" alt="Copy" onclick="copyToClipboard('sav78@pitt.edu')">
+      </div>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/saskia-van-t-hof/" target="_blank"><img src="icons/linkedin.svg" alt="LinkedIn"></a>
+        <a href="https://github.com/saskiavhof" target="_blank"><img src="icons/github.svg" alt="GitHub"></a>
+        <a href="https://www.instagram.com/saskia.makes/" target="_blank"><img src="icons/instagram.svg" alt="Instagram"></a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

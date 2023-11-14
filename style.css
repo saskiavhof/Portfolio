@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu:wght@400;700&display=swap');
+
+h1 {
+  font-size: 40px;
+  line-height: 70px;
+  margin-bottom: 10px;
+  text-align: left; /* Center the text horizontally */
+  font-family: 'Ubuntu', sans-serif;
+  color: #5a62be;
+}
+
+h2 {
+  font-size: 16px;
+  line-height: 28px;
+  margin-bottom: 10px;
+  text-align: left; /* Center the text horizontally */
+  color: #7e7f83;
+}
+
+h3{
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-align: left;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+}
+
+.intro-container h3{
+  font-size: 20px;
+  margin-bottom: -5px;
+  text-align: left;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+  
+nav {
+  background-color: white;
+  overflow: hidden;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.left-section {
+  float: left;
+}
+
+.right-section {
+  float: right;
+}
+
+nav a {
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: #5a62be; /* default color for non-bold links */
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+}
+  
+nav a:hover {
+  color: black;
+}
+  
+nav a.home.current,
+nav a.about.current,
+nav a.resume.current {
+  color: black; /* color for the current bold link */
+  font-weight: bold; /* font weight for the current bold link */
+}
+
+/*.intro-container {
+    display: flex;
+    margin: auto;
+    width: 1000px;
+    padding: 20px;
+  }*/
+
+.intro-container {
+    display: flex;
+    margin: auto;
+    width: 100%; /* Make it take full width of the screen */
+    max-width: 1000px; /* Set a max-width for larger screens */
+    padding: 20px;
+}
+  
+.left-cell {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 600px;
+}
+  
+.right-cell {
+  flex: 1; /* Takes up 1 part of the flex container */
+  padding: 20px; /* Adjust padding as needed */
+  height: 600px;
+}
+  
+.right-cell img {
+  max-width: 100%;
+  height: auto;
+  display: block; /* Ensure the image is a block element */
+  margin: 0 auto;
+}
+
+.selected-works {
+  text-align: center;
+  padding: 30px;
+}
+
+.selected-works h1 {
+  font-size: 40px;
+  line-height: 70px;
+  margin-bottom: 20px;
+  text-align: center; /* Center the text horizontally */
+  font-family: 'Ubuntu', sans-serif;
+  color: #5a62be;
+}
+
+.selected-works h2 {
+  font-size: 16px;
+  line-height: 28px;
+  margin-bottom: 10px;
+  text-align: center; /* Center the text horizontally */
+  color: #7e7f83;
+}
+
+.selected-works h3{
+  font-size: 20px;
+  margin-bottom: 50px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+
+.selected-works-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+  width: 100%; 
+}
+
+.selected-works-item {
+  overflow: hidden;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: transform 0.7s ease-in-out, opacity 0.7s ease-in-out;
+}
+
+.work-image {
+  max-width: 100%;
+  border-radius: 15px 15px 0 0; /* Apply border-radius only to the top corners */
+  border-radius: 15px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .intro-container {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    justify-content: center;
+    width: auto;
+  }
+
+  .right-cell {
+    order: -1; /* Move the .right-cell to the top in the stacked layout */
+    max-width: 100%;
+    height: auto;
+  }
+
+  .right-cell img {
+    display: block; /* Ensure the image is a block element */
+    margin: 0 auto; /* Center the image horizontally within the .right-cell */
+    max-width: 100%; /* Ensure the image doesn't exceed its container */
+    height: auto;
+  }
+
+  .selected-works h1 {
+    text-align: left; /* Align text to the left on smaller screens */
+  }
+
+  .selected-works h2 {
+    text-align: left; /* Align text to the left on smaller screens */
+  }
+
+  .selected-works h3 {
+    text-align: left; /* Align text to the left on smaller screens */
+  }
+
+  .selected-works-container {
+    grid-template-columns: 1fr; /* Change to a 1 x 1 grid for smaller screens */
+  }
+}
+
+footer {
+  background-color: white;
+  color: 5a62be;
+  text-align: center;
+  padding: 30px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.email-container {
+  display: flex;
+  align-items: center;
+}
+
+.copy-symbol {
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+#copyIcon {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+}
