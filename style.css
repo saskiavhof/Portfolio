@@ -25,10 +25,12 @@ h3{
   font-weight: 500;
 }
 
-.intro-container h3{
-  font-size: 20px;
-  margin-bottom: -5px;
-  text-align: left;
+p {
+  font-size: 16px;
+  line-height: 28px;
+  margin-bottom: 10px;
+  text-align: left; /* Center the text horizontally */
+  color: black;
 }
 
 body {
@@ -73,12 +75,6 @@ nav a.resume.current {
   font-weight: bold; /* font weight for the current bold link */
 }
 
-/*.intro-container {
-    display: flex;
-    margin: auto;
-    width: 1000px;
-    padding: 20px;
-  }*/
 
 .intro-container {
     display: flex;
@@ -86,8 +82,15 @@ nav a.resume.current {
     width: 100%; /* Make it take full width of the screen */
     max-width: 1000px; /* Set a max-width for larger screens */
     padding: 20px;
+    box-sizing: border-box;
 }
   
+.intro-container h3{
+  font-size: 20px;
+  margin-bottom: -5px;
+  text-align: left;
+}
+
 .left-cell {
   flex: 1;
   padding: 20px;
@@ -101,25 +104,32 @@ nav a.resume.current {
   flex: 1; /* Takes up 1 part of the flex container */
   padding: 20px; /* Adjust padding as needed */
   height: 600px;
+  justify-content: center;
 }
   
 .right-cell img {
-  max-width: 100%;
+  max-width: 90%;
   height: auto;
   display: block; /* Ensure the image is a block element */
   margin: 0 auto;
+  border-radius: 15px;
 }
 
+
+
+
+
 .selected-works {
-  text-align: center;
   padding: 30px;
+  max-width: 1000px;
+  margin: auto;
+  box-sizing: border-box;
 }
 
 .selected-works h1 {
   font-size: 40px;
   line-height: 70px;
   margin-bottom: 20px;
-  text-align: center; /* Center the text horizontally */
   font-family: 'Ubuntu', sans-serif;
   color: #5a62be;
 }
@@ -143,7 +153,7 @@ nav a.resume.current {
 
 .selected-works-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: 20px;
   max-width: 1000px;
   margin: auto;
@@ -172,10 +182,17 @@ nav a.resume.current {
     width: auto;
   }
 
+  .about-container {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    justify-content: center;
+    width: auto;
+  }
+
   .right-cell {
     order: -1; /* Move the .right-cell to the top in the stacked layout */
     max-width: 100%;
     height: auto;
+    align-items: center;
   }
 
   .right-cell img {
@@ -203,10 +220,11 @@ nav a.resume.current {
 }
 
 footer {
-  background-color: white;
+  background-color: #C1E0EF;
   color: 5a62be;
   text-align: center;
   padding: 30px;
+  margin-top: 100px; 
 }
 
 .footer-content {
@@ -214,7 +232,6 @@ footer {
   justify-content: space-between;
   align-items: center;
 }
-
 
 .email-container {
   display: flex;
@@ -240,4 +257,106 @@ footer {
 .social-icons img {
   width: 30px;
   height: 30px;
+}
+
+
+.career-container {
+  margin: auto;
+  width: 100%;
+  max-width: 1000px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.career-content {
+  padding: 20px;
+}
+
+
+
+
+
+
+
+
+.project-container {
+  padding: 20px; /* Add padding to the project-container */
+}
+
+.project-title {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+}
+
+.project-title h1{
+  color: black;
+  margin-bottom: -10px;
+}
+
+.project-title h2 {
+  margin-bottom: 20px;
+}
+
+.involvemint-button {
+  background-color: #5a62be;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  position: absolute;
+  top: 100px; /* Adjust the top position as needed */
+  right: 20px; /* Adjust the right position as needed */
+}
+
+.project-problem {
+  display: flex;
+  flex-direction: row; /* Keep items in a row on regular screens */
+}
+
+.project-left-cell {
+  max-width: 50%; /* Adjust width for regular screens */
+  height: auto;
+}
+
+.project-right-cell {
+  max-width: 50%; /* Adjust width for regular screens */
+  height: auto;
+}
+
+.project-right-cell h3{
+  font-weight: 700;
+}
+
+.project-right-cell-content {
+ padding-left: 30px;;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .project-title {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: center;
+  }
+
+  .project-problem {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+  }
+
+  .project-left-cell,
+  .project-right-cell {
+    max-width: 100%; /* Adjust width for smaller screens */
+    height: auto;
+  }
+
+  .project-right-cell-content {
+    padding-left: 0px;;
+   }
+
+  .right-cell img {
+    max-width: 100%;
+  }
+
+  .blue-button {
+    margin-bottom: 30px;
+  }
 }

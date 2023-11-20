@@ -1,10 +1,33 @@
 function openResume() {
     // Replace 'your_resume_link' with the actual link to your resume
-    window.open('your_resume_link', '_blank');
+    window.open('https://drive.google.com/file/d/1Dfj7Y0FMhYVVOtLoYxa8mgBrPTYaQH7X/view?usp=sharing', '_blank');
   }
 
 document.addEventListener("DOMContentLoaded", function () {
   const selectedWorksItems = document.querySelectorAll(".selected-works-item");
+  const projectPages = ['project1.html', 'project2.html', 'project3.html', 'project4.html', 'project5.html', 'project6.html'];
+
+  selectedWorksItems.forEach((item, index) => {
+    const h3Element = item.querySelector('h3');
+    const imageElement = item.querySelector('.work-image');
+
+    // Add a click event listener to the h3 element
+    h3Element.addEventListener('click', function () {
+      navigateToProjectPage(index);
+    });
+
+    // Add a click event listener to the image element
+    imageElement.addEventListener('click', function () {
+      navigateToProjectPage(index);
+    });
+  });
+
+  function navigateToProjectPage(index) {
+    // Redirect to the corresponding project page based on the index
+    if (index < projectPages.length) {
+      window.location.href = projectPages[index];
+    }
+  }
 
   function checkScroll() {
     selectedWorksItems.forEach((item) => {

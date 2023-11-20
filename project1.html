@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="projects.css">
+  <script defer src="script.js"></script>
+</head>
+<body class="project">
+
+  <nav>
+    <div class="left-section">
+      <a href="index.html" class="home">PORTFOLIO</a>
+    </div>
+    <div class="right-section">
+      <a href="index.html" class="home">HOME</a>
+      <a href="about.html" class="about">ABOUT</a>
+      <a href="#" onclick="openResume()" class="resume">RESUME</a>
+    </div>
+  </nav>
+
+
+  <section class="project-container">
+    <div class="career-container">
+      <div class="project-title">
+        <h1>InvolveMINT</h1>
+        <h2>UX/UI Research and UX/UI Design</h2>
+    
+      </div>
+      <div class="project-problem">
+        <div class="project-left-cell">
+          <img src="mockups/involveMINTvertical.png" alt="InvolveMINT Work Image" class="work-image" id="involvemint">
+        </div>
+        <div class="project-right-cell">
+          <div class="project-right-cell-content">
+            <h3>Overview</h3>
+              <p>InvolveMINT is an economic development nonprofit that aims to promote social and environmental change by hosting a Community Currency (CC) on their web application. ChangeMakers earn CCs by contributing to sustainable projects (like community gardens), which can then be redeemed for tangible goods or used to fund projects.</p>
+              <h3>Problem</h3>
+              <p>ChangeMakers struggled to receive credit for their volunteer work due to the lack of a "Proof of Impact" submission – a photo of their contribution that community partners could verify.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="overview-grid">
+      <div class="overview-grid-item">
+        <h3>Role</h3>
+          <p>UX/UI design intern<br>UX/UI researcher<br>Usability tester<br>Interviewer</p>
+      </div>
+      <div class="overview-grid-item">
+        <h3>Team</h3>
+          <p>2 UX/UI designers<br>1 project manager<br>1 CEO</p>
+      </div>
+      <div class="overview-grid-item">
+        <h3>Tools</h3>
+          <p>Figma<br>Miro<br>Trello</p>
+      </div>
+      <div class="overview-grid-item">
+        <h3>Timeline</h3>
+          <p>13 weeks<br>May - August 2023</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="case-study-container">
+    <h1>User Flow</h1>
+    <div class="case-study-content">
+      <!-- Image with subtitle -->
+      <div class="case-study-image">
+        <img src="involveMINT/UserFlow.png" alt="InvolveMINT User Flow" class="work-image">
+        <h2>User flow representing all of the actions taken by a user during the onboarding process of the web or mobile app.</h2>
+      </div>
+      <!-- Explanation for the user flow -->
+      <div class="case-study-description">
+        <p>Through this user flow, I analyzed the existing website's functionality from the perspective of the user in regards to the onboarding, credit earning, and credit spending process using involveMINT. By understanding the current system's strengths and identifying areas of confusion, I was able to come up with possible solutions and present them to the CEO.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="case-study-container">
+    <h1>Designing the Work Verification Feature</h1>
+    <div class="case-study-content">
+      <!-- Image with subtitle -->
+      <div class="case-study-image">
+        <img src="involveMINT/screenshotFigma.png" alt="Screenshot of InvolveMINT Figma page" class="work-image">
+        <h2>The high-fidelty screens my team designed using Figma.</h2>
+      </div>
+      <!-- Explanation for the user flow -->
+      <div class="case-study-description">
+        <p>Formerly called the "Proof of Impact", this feature of the mobile app allows users to choose a volunteer activity, specify where they want the credits to count towards, and log the completion of their work hours. This information then gets sent to a Community Partner, who verifies the work so that InvolveMINT can credit the ChangeMaker for their work.<br>The sample scenario we created for the mockup involved a ChangeMaker starting a "Clearing Japanese Knotweed" activity at Fairfield Community Garden.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="case-study-container">
+    <h1>A/B Testing</h1>
+    <div class="case-study-content">
+      <!-- Image with subtitle -->
+      <div class="case-study-video">
+        <iframe width="1000" height="562.5" src="https://www.youtube.com/embed/X7D6dbwYh7s" alt="Video walking through the AB testing" frameborder="0" allowfullscreen></iframe>
+        <h2>Video walking through the A/B testing of the work verification feature.</h2>
+      </div>
+      <!-- Explanation for the user flow -->
+      <div class="case-study-description">
+        <p>In this study, we aimed to investigate user preferences regarding two different credit verification methods for tracking progress: taking a before and after photo versus using a timer to clock in and out along with before and after photos. The study was conducted through two distinct tests, Test A and Test B, each employing different sequences of actions to assess user experiences and preferences.</p>
+      </div>
+      <h3>Test A</h3>
+      <ol class="list">
+        <li>Users chose an activity.</li>
+        <li>Users were prompted to take a before photo.</li>
+        <li>Users clocked in to indicate the start of the activity.</li>
+        <li>Users completed the activity.</li>
+        <li>Users clocked out to indicate the end of the activity.</li>
+        <li>Users submitted the credit to be verified.</li>
+      </ol>
+      <h3>Test B</h3>
+      <ol class="list">
+        <li>Users chose an activity.</li>
+        <li>Users were prompted to take a before photo.</li>
+        <li>Users completed the activity.</li>
+        <li>Users took an after photo to document their progress.</li>
+        <li>Users submitted the credit to be verified.</li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="case-study-container">
+    <h1>Challenge</h1>
+    <div class="case-study-content">
+      <!-- Explanation for the user flow -->
+      <div class="case-study-description">
+        <p> The primary challenge encountered during the study was related to user participation, specifically in engaging participants in scheduled Zoom calls. Given that many people in our survey database no longer volunteered at the same environmental organizations, it was challenging to incentivize their participation in the study effectively.<br>Some strategies we used to overcome this challenge include:</p>
+        <ul class="unordered-list">
+          <li>Offering non-monetary incentives (InvolveMINT Credits)</li>
+          <li>Offering flexible scheduling</li>
+             <li>Collaborating with student organizations and student-run community gardens</li>
+           <li>Maintaining regular communication and follow-ups</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  
+
+  <section class="case-study-container">
+    <h1>Results</h1>
+    <div class="case-study-content">
+      <div class="case-study-description">
+        <p>The A and B testing specifications involved two distinct approaches to credit verification tracking, with Test A incorporating a clock-in and out mechanism alongside before and after photos, and Test B focusing solely on photo documentation. Despite challenges related to user participation, the study's finding revealed a strong user preference for clock-in/out-based tracking, highlighting the appeal of monitoring the actual time spent on activities.</p>
+    </div>
+    <div class="case-study-image">
+      <img src="mockups/involveMINT.png" alt="InvolveMINT User Flow" class="work-image">
+      <h2>Final high-fidelity designs of the clock-in and clock-out screens of the work verification feature.</h2>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="email-container">
+        <span id="copyEmail" class="copy-symbol" onclick="copyToClipboard('sav78@pitt.edu')">sav78@pitt.edu</span>
+        <img id="copyIcon" src="icons/copy.svg" alt="Copy" onclick="copyToClipboard('sav78@pitt.edu')">
+      </div>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/saskia-van-t-hof/" target="_blank"><img src="icons/linkedin.svg" alt="LinkedIn"></a>
+        <a href="https://github.com/saskiavhof" target="_blank"><img src="icons/github.svg" alt="GitHub"></a>
+        <a href="https://www.instagram.com/saskia.makes/" target="_blank"><img src="icons/instagram.svg" alt="Instagram"></a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
