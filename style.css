@@ -75,6 +75,11 @@ nav a.resume.current {
   font-weight: bold; /* font weight for the current bold link */
 }
 
+#portfolio {
+  color: black;
+  font-weight: bold; 
+}
+
 
 .intro-container {
     display: flex;
@@ -115,7 +120,9 @@ nav a.resume.current {
   border-radius: 15px;
 }
 
-
+#about-photo {
+  margin-top: 30px;
+}
 
 
 
@@ -268,9 +275,82 @@ footer {
   box-sizing: border-box;
 }
 
+
+
+
 .career-content {
   padding: 20px;
 }
+
+.experience-content {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.position-container {
+  display: flex;
+  gap: 20px;
+  align-items:flex-start;
+  padding: 10px; /* Add padding for better visibility */
+}
+
+.logo img {
+  max-width: 60px;
+  max-height: 100%;
+  align-self: center;
+}
+
+.company-info {
+  display: flex;
+  align-items: center;
+  height: 25px;
+  margin-top: -8px;
+}
+
+.company-info h3 a {
+  text-decoration: none; /* Keep the underline for the link */
+  color: black; /* Change the font color to black */
+  font-size: 22px;
+}
+
+.arrow-icon {
+  max-width: 20px;
+  transition: margin-left 0.3s ease-in-out;
+}
+
+.company-info a:hover .arrow-icon {
+  margin-left: 7px;
+}
+
+.position-bottom {
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+}
+
+.position {
+  font-size: 18px;
+  margin: 0;
+}
+
+.year {
+  font-size: 18px;
+  color: #7e7f83;
+  margin-left: 7px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -358,5 +438,9 @@ footer {
 
   .blue-button {
     margin-bottom: 30px;
+  }
+
+  nav #portfolio {
+    display: none;
   }
 }

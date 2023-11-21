@@ -77,7 +77,10 @@ nav a.resume.current {
 
 
 
-
+#portfolio {
+  color: black;
+  font-weight: bold; 
+}
 
 
 .work-image {
@@ -247,8 +250,84 @@ footer {
   margin-bottom: 1em;
 }
 
+.tests-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px; /* Adjust the gap between grid items */
+  margin: auto;
+  width: 100%;
+  max-width: 1000px;
+  padding: 20px;
+  box-sizing: border-box;
+}
 
+.tests-grid h3{
+  text-align: center;
+}
 
+.tests-grid .testA {
+  background-color: #c1e0ef; /* Set the background color for Pros */
+  border-radius: 30px;
+  padding: 15px;
+}
+
+.tests-grid .testB {
+  background-color: #c1e0ef; /* Set the background color for Pros */
+  border-radius: 30px;
+  padding: 15px;
+}
+
+.pro-con-grid h3{
+  text-align: center;
+}
+.pro-con-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px; /* Adjust the gap between grid items */
+  margin: auto;
+  width: 100%;
+  max-width: 1000px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.analysis-box{
+  /*background-color: #e3b7c8; Set the background color */
+  margin-top: 40px;
+}
+
+.analysis-box #pros {
+  background-color: #d5f0ad; /* Set the background color for Pros */
+  border-radius: 30px;
+  padding: 15px;
+}
+
+.analysis-box #cons {
+  background-color: #ffd3d6; /* Set the background color for Cons */
+  border-radius: 30px;
+  padding: 15px;
+}
+
+.themes-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  grid-gap: 20px; /* Adjust the gap between grid items */
+  margin: auto;
+  width: 100%;
+  max-width: 1000px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.themes-grid .unordered-list {
+  background-color: #c1e0ef; /* Set the background color */
+  border-radius: 30px; 
+  padding: 15px;
+}
+
+.themes-grid h3{
+  text-align: center;
+}
 
 /* Media query for smaller screens */
 @media (max-width: 768px) {
@@ -275,9 +354,30 @@ footer {
     max-width: 100%;
   }
 
-  .blue-button {
-    margin-bottom: 30px;
+  .overview-grid {
+    grid-template-columns: repeat(2, 2fr);
+  }
+
+  .themes-grid{
+    grid-template-columns: repeat(2, 3fr);
   }
 }
 
+@media (max-width: 600px) {
+  .overview-grid {
+    grid-template-columns: repeat(1, 4fr);
+  }
+  
+  .pro-con-grid {
+    grid-template-columns: repeat(1, 2fr);
+  }
+
+  .themes-grid{
+    grid-template-columns: repeat(1, 6fr);
+  }
+
+  nav #portfolio {
+    display: none;
+  }
+}
 
