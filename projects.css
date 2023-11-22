@@ -39,12 +39,16 @@ body {
 }
   
 nav {
+  position: fixed;
+  top: 0px; /* Adjust the top position as needed */
   background-color: white;
   overflow: hidden;
   color: black;
   display: flex;
   justify-content: space-between;
   padding: 30px;
+  width: calc(100% - 60px); /* Adjust the width to keep the original layout */
+  z-index: 1000;
 }
 
 .left-section {
@@ -324,6 +328,27 @@ footer {
 .themes-grid h3{
   text-align: center;
 }
+
+.back-to-home {
+  text-align: center;
+  margin: 20px 0; /* Adjust the margin as needed */
+}
+
+.back-to-home-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #5c62ad;
+  color: white;
+  text-decoration: none;
+  border-radius: 15px;
+  font-size: 16px;
+}
+
+.back-to-home-button:hover {
+  text-decoration:underline;
+  color: white;
+}
+
 
 /* Media query for smaller screens */
 @media (max-width: 768px) {

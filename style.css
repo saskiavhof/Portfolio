@@ -36,8 +36,9 @@ p {
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
+  padding-top: 100px; 
 }
-  
+/*
 nav {
   background-color: white;
   overflow: hidden;
@@ -45,6 +46,19 @@ nav {
   display: flex;
   justify-content: space-between;
   padding: 30px;
+}*/
+
+nav {
+  position: fixed;
+  top: 0px; /* Adjust the top position as needed */
+  background-color: white;
+  overflow: hidden;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  width: calc(100% - 60px); /* Adjust the width to keep the original layout */
+  z-index: 1000;
 }
 
 .left-section {
@@ -250,6 +264,7 @@ footer {
   margin-right: 5px;
 }
 
+
 #copyIcon {
   cursor: pointer;
   width: 20px;
@@ -339,10 +354,6 @@ footer {
   color: #7e7f83;
   margin-left: 7px;
 }
-
-
-
-
 
 
 
