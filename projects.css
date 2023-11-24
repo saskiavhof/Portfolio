@@ -6,7 +6,7 @@ h1 {
   margin-bottom: 10px;
   text-align: left; /* Center the text horizontally */
   font-family: 'Ubuntu', sans-serif;
-  color: #5a62be;
+  color: hsl(235, 43%, 55%);
 }
 
 h2 {
@@ -173,7 +173,6 @@ footer {
 }
 
 .project-title h1{
-  color: black;
   margin-bottom: -10px;
 }
 
