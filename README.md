@@ -3,7 +3,7 @@
 **Saskia Van't Hof
 UX/UI Designer and Web Developer**
 
-Hi, I'm **Saskia**!
+Hi, I'm Saskia!
 I design experiences that **_connect_**.
 
 Born and raised in Japan as a Dutch-American, I have always been interested in the way language and culture affect how things look – especially interface design.
