@@ -1,7 +1,7 @@
 # Portfolio
 
-**Saskia Van't Hof
-UX/UI Designer and Web Developer**
+**Saskia Van't Hof**
+**UX/UI Designer and Web Developer**
 
 Hi, I'm Saskia!
 I design experiences that **_connect_**.
