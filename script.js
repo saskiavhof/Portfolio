@@ -1,6 +1,6 @@
 function openResume() {
     // Replace 'your_resume_link' with the actual link to your resume
-    window.open('https://drive.google.com/file/d/1Dfj7Y0FMhYVVOtLoYxa8mgBrPTYaQH7X/view?usp=sharing', '_blank');
+    window.open('https://drive.google.com/file/d/1FO5z-9wgBYYrK89_coT-uPJHCfs7F_Bz/view?usp=sharing', '_blank');
   }
 
 document.addEventListener("DOMContentLoaded", function () {
