@@ -208,7 +208,6 @@ nav a.resume.current {
   text-align: left;
 }
 
-
 .selected-works h2 {
   font-size: 14px;
   margin-top: 30px;
@@ -263,6 +262,14 @@ nav a.resume.current {
 
   .selected-works-container {
     grid-template-columns: 1fr; /* Change to a 1 x 1 grid for smaller screens */
+  }
+
+  .selected-works-item {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+  }
+
+  .selected-works-item .work-image{
+    max-width: 100%; /* Stack items vertically on smaller screens */
   }
 }
 
