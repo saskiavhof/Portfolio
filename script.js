@@ -7,10 +7,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const projectPages = ['project1.html', 'project2.html', 'project3.html', 'project4.html', 'project5.html', 'project6.html'];
 
   selectedWorksItems.forEach((item, index) => {
-    const h3Element = item.querySelector('h3');
+    const h2Element = item.querySelector('h2');
     const imageElement = item.querySelector('.work-image');
 
-    h3Element.addEventListener('click', function () {
+    h2Element.addEventListener('click', function () {
       navigateToProjectPage(index);
     });
 
