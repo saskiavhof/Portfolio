@@ -38,26 +38,18 @@ body {
   font-family: 'Montserrat', sans-serif;
   padding-top: 100px; 
 }
-/*
-nav {
-  background-color: white;
-  overflow: hidden;
-  color: black;
-  display: flex;
-  justify-content: space-between;
-  padding: 30px;
-}*/
+
 
 nav {
   position: fixed;
-  top: 0px; /* Adjust the top position as needed */
+  top: 0px;
   background-color: white;
   overflow: hidden;
   color: black;
   display: flex;
   justify-content: space-between;
   padding: 30px;
-  width: calc(100% - 60px); /* Adjust the width to keep the original layout */
+  width: calc(100% - 60px);
   z-index: 1000;
 }
 
@@ -208,6 +200,7 @@ nav a.resume.current {
   max-width: 1000px;
   margin: auto;
   width: 100%; 
+  transition: transform 0.7s ease-in-out, opacity 0.7s ease-in-out;
 }
 
 .selected-works-item {
@@ -224,6 +217,7 @@ nav a.resume.current {
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
 }
+
 
 @media (max-width: 768px) {
   .intro-container {
@@ -286,13 +280,18 @@ footer {
 .email-container {
   display: flex;
   align-items: center;
+  transition: transform 0.2s ease-in;
+}
+
+.email-container:hover {
+  /*transform: translateY(-5px);*/
+  transform: scale(1.1);
 }
 
 .copy-symbol {
   cursor: pointer;
   margin-right: 5px;
 }
-
 
 #copyIcon {
   cursor: pointer;
@@ -305,11 +304,17 @@ footer {
   gap: 15px;
 }
 
+
 .social-icons img {
   width: 30px;
   height: 30px;
+  transition: transform 0.2s ease-in;
 }
 
+.social-icons img:hover {
+  /*transform: translateY(-5px);*/
+  transform: scale(1.2);
+}
 
 .career-container {
   margin: auto;

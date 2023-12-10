@@ -118,6 +118,12 @@ footer {
 .email-container {
   display: flex;
   align-items: center;
+  transition: transform 0.2s ease-in;
+}
+
+.email-container:hover {
+  /*transform: translateY(-5px);*/
+  transform: scale(1.1);
 }
 
 .copy-symbol {
@@ -136,11 +142,17 @@ footer {
   gap: 15px;
 }
 
+
 .social-icons img {
   width: 30px;
   height: 30px;
+  transition: transform 0.2s ease-in;
 }
 
+.social-icons img:hover {
+  /*transform: translateY(-5px);*/
+  transform: scale(1.2);
+}
 
 .career-container {
   margin: auto;
@@ -341,11 +353,13 @@ footer {
   text-decoration: none;
   border-radius: 15px;
   font-size: 16px;
+  transition: transform 0.2s ease-in;
 }
 
 .back-to-home-button:hover {
-  text-decoration:underline;
   color: white;
+  /*transform: translateY(-5px);*/
+  transform: scale(1.1);
 }
 
 
