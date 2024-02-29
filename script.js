@@ -1,5 +1,5 @@
 function openResume() {
-    window.open('https://drive.google.com/file/d/1FO5z-9wgBYYrK89_coT-uPJHCfs7F_Bz/view?usp=sharing', '_blank');
+    window.open('https://drive.google.com/file/d/1SbEmVcUEFDUXaDV1_F9LDMC2J79MIx8O/view?usp=sharing', '_blank');
   }
 
 document.addEventListener("DOMContentLoaded", function () {
