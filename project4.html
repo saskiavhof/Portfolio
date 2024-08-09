@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>StoryWorlds</title>
+  <link rel="icon" type="image/x-icon" href="home/me.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="projects.css">
+  <script defer src="script.js"></script>
+</head>
+<body class="project">
+
+  <nav>
+    <div class="left-section">
+      <a href="index.html" id="portfolio" class="home current">SASKIA VAN'T HOF</a>
+    </div>
+    <div class="right-section">
+      <a href="index.html" class="home">HOME</a>
+      <a href="about.html" class="about">ABOUT</a>
+      <a href="#" onclick="openResume()" class="resume">RESUME</a>
+    </div>
+  </nav>
+
+
+  <section class="project-container">
+    <div class="career-container">
+      <div class="project-title">
+        <h1>StoryWorlds</h1>
+      </div>
+      
+      <div class="project-problem">
+        <div class="project-left-cell">
+          <img src="mockups/StoryWorldsvertical.png" alt="InvolveMINT Work Image" class="work-image" id="involvemint">
+        </div>
+        <div class="project-right-cell">
+          <div class="project-right-cell-content">
+            <h3>Overview</h3>
+              <p>StoryWorlds is an open-source web-based system for collecting, storing, connecting, and presenting traditional knowledge in the form of stories, myths, and testimonies from multiple cultures and languages. The research team at the University of Pittsburgh School of Computing and Information, in partnership with academics in Ecuador, is working to pilot the application in the context of Ecuadorian Kichwa, with stories and associated media in Spanish and English.</p>
+            <h3>Problem</h3>
+              <p>As we began designing the initial iteration/proof of concept for StoryWorlds, several key challenges emerged: ensuring cultural accuracy and sensitivity, addressing language and accessibility barriers, and fostering community engagement and buy-in.</p>
+            <h3>Approach</h3>
+              <p>I conducted stakeholder interviews with 20+ academics across the United States as well as community members in Ecuador. Then, I used these perspectives to thoughtfully design a proof of concept for an interface that could effectively store stories for the Ecuadorian Quechuan community. </p>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="overview-grid">
+      <div class="overview-grid-item">
+        <h3>Role</h3>
+          <p>UX/UI designer<br>Researcher<br>Front-end engineer<br>Interviewer</p>
+      </div>
+      <div class="overview-grid-item">
+        <h3>Team</h3>
+          <p>Directed undergraduate research</p>
+      </div>
+      <div class="overview-grid-item">
+        <h3>Tools</h3>
+          <p>Figma<br>HTML/CSS<br>Markdown<br>Javascript<br>D3</p>
+      </div>
+      <div class="overview-grid-item">
+        <h3>Timeline</h3>
+          <p>16 weeks<br>April - August 2023</p>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="case-study-container">
+    <h1>Preliminary Explorations</h1>
+    <div class="case-study-content">
+      <div class="case-study-description">
+        <h3>1. Evaluation of Existing Interface</h3>
+        <p>My mentor, Dr. Dmitriy Babichenko, had created a bare-bones interface that incorporated the key ideas of using tags and colored nodes. However, challenges arose from overlapping tags, impacting the readability of content categorization and suggesting the need for improved usability in tag organization.</p>
+      </div>
+
+      <div class="case-study-image">
+        <img src="storyworlds/preliminaryResearch.png" alt="Original concept map" class="work-image">
+        <h2>User flow representing all of the actions taken by a user during the onboarding process of the web or mobile app.</h2>
+      </div>
+
+      <div class="case-study-description">
+        <h3>2. Comparison with Other Knowledge-Based Software</h3>
+        <p>Analyzing the usability of other softwares that use a graph-based or knowledge-based format (Obsidian and Tinderbox) I was able to compare and contrast their features and consider what designs I wanted to implement for the StoryWorlds project. Obsidian's intuitive Markdown-based editor and graph-based visualization, as well as Tinderbox's unique spatial organization features, helped me identify best practices and refine my own interface design.</p>
+      </div>
+
+      <div class="analysis-box">
+        <h3>Obsidian Analysis:</h3>
+        <div class="pro-con-grid">
+          <div class="unordered-list" id="pros">
+            <h3>Pros</h3>
+              <ul>
+                  <li>Markdown-based editor for easy content creation and formatting.</li>
+                  <li>Intuitive interface with simple, case-sensitive links (e.g., [[file]]) and backlinks.</li>
+                  <li>Graph-based system for visualizing relationships.</li>
+                  <li>Ability to group content into folders without disrupting the graph.</li>
+                  <li>Obsidian canvas for spatial organization, with drag-and-drop features</li>
+              </ul>
+          </div>
+          <div class="unordered-list" id="cons">
+            <h3>Cons</h3>
+              <ul>
+                  <li>Initial UX may feel overwhelming.</li>
+                  <li>Graph adjustments can be confusing.</li>
+                  <li>Hierarchical file/folder structure might not suit all scenarios.</li>
+                  <li>Deleting nodes/files can be challenging.</li>
+              </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="analysis-box">  
+        <h3>Tinderbox Analysis:</h3>
+        <div class="pro-con-grid">
+          <div class="unordered-list" id="pros">
+            <h3>Pros</h3>
+              <ul>
+                <li>Concept mapping with label connections (agree, disagree, clarify) and customization options (icons, colors, shapes).</li>
+                <li>Tangible interface resembling a virtual whiteboard for spatial organization.</li>
+                <li>Easy rearrangement of notes.</li>
+              </ul>
+          </div>
+          <div class="unordered-list" id="cons">
+            <h3>Cons</h3>
+              <ul>
+                <li>Less intuitive interface for some users, especially regarding link parking and certain functions.</li>
+                <li>Non-uniform size of icons can create visual clutter.</li>
+                <li>Default spread of nodes and font choices may seem less sophisticated.</li>
+              </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="case-study-container">
+    <h1>User Interviews</h1>
+    <div class="case-study-content">
+      <!-- Explanation for the user flow -->
+      <div class="case-study-description">
+        <p>I interviewed over a dozen academics in the fields of Anthropology, Indigenous Studies, Linguistics, Computer Science, Sociology, and Political Science over the course of May and June, gathering diverse perspectives that enriched the research process. Click <a href="https://docs.google.com/document/d/1D8Bq85Nwe1ClCGxHOv6vxdrlPx-emb-S9UycQdy9pVE/edit" target="_blank">here</a> to access my interview questions.<br>
+          <br>Gathering their insights, I presented a summary of questions, concerns, and suggestions on six key themes to professors in Pittsburgh and Ecuador. These were some main themes:</p>
+      </div>
+      <div class="themes-grid">
+        <div class="unordered-list">
+          <h3>Access</h3>
+            <ul>
+                <li>Digital divide (lack of internet) in remote communities</li>
+                <li>Search engine optimization</li>
+                <li>Impact of digital literacy on access</li>
+            </ul>
+        </div>
+        <div class="unordered-list">
+          <h3>Localization</h3>
+            <ul>
+                <li>Localized images of ideas and concepts (What does "a tattoo" look like?)</li>
+                <li>Audio of words in associated languages</li>
+                <li>Impact of variations and dialects of language</li>
+            </ul>
+        </div>
+        <div class="unordered-list">
+          <h3>Community Benefits</h3>
+            <ul>
+                <li>Realistic impact of project on community</li>
+                <li>Cultural preservation and analysis of folklore? Teaching device?</li>
+                <li>Danger of depicting cultural knowledge, practices, or stories is a way that community is representative</li>
+            </ul>
+        </div>
+        <div class="unordered-list">
+          <h3>Collaboration</h3>
+            <ul>
+                <li>Diversity, equity, and inclusion</li>
+                <li>Storytellers need to be involved and compensated</li>
+                <li>Consider the long history of outside scholars drawing knowledge from indigenous communities without them having control over the representation</li>
+            </ul>
+        </div>
+        <div class="unordered-list">
+          <h3>Development</h3>
+            <ul>
+                <li>Machine learning</li>
+                <li>Cross-cultural usability</li>
+                <li>Need to consider scope of project</li>
+            </ul>
+        </div>
+        <div class="unordered-list">
+          <h3>Organization of Data</h3>
+            <ul>
+                <li>Difficulty of identifying data points when working with very rich oral narratives</li>
+                <li>What makes the graphical representation helpful?</li>
+                <li>What makes the graphical representation interesting?</li>
+            </ul>
+        </div>
+    </div>
+  </section>
+
+  <section class="case-study-container">
+    <h1>Iterative Interface Design</h1>
+    <div class="case-study-content">
+      <!-- Image with subtitle -->
+      <div class="case-study-image">
+        <img src="storyworlds/conceptMap.png" alt="Concept map screen" class="work-image">
+        <h2>New mockup of the concept map incorporating ideas from the interviews.</h2>
+      </div>
+      <!-- Explanation for the user flow -->
+      <div class="case-study-description">
+        <p>Wanting to address the specific concerns raised during interviews and incorporating valuable feedback from collaborators, I revised some screens of the mockup. This iterative process involved enhancing the user interface to ensure cultural sensitivity, improving the search functionality for easy accessibility, and implementing clickable elements for auditory learning experiences. Additionally, I created new screens with innovative features, such as localized image displays and interactive storytelling components, enhancing the overall usability and cultural relevance of the StorWworlds project.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="case-study-container">
+    <h1>High-Fidelity Mockup</h1>
+    <div class="case-study-content">
+      <!-- Image with subtitle -->
+      <div class="case-study-video">
+        <iframe width="1000" height="562.5" src="https://www.youtube.com/embed/LuRF_bikjCM?mute=1" alt="Video walking through the AB testing" frameborder="0" allowfullscreen></iframe>
+        <h2>Video walking through the design mockup of StoryWorlds.</h2>
+      </div>
+    </div>
+  </section>
+
+  <section class="case-study-container">
+    <h1>Challenge</h1>
+    <div class="case-study-content">
+      <!-- Explanation for the user flow -->
+      <div class="case-study-description">
+        <p> The primary challenge encountered during the study was related to user participation, specifically in engaging participants in scheduled Zoom calls. Given that many people in our survey database no longer volunteered at the same environmental organizations, it was challenging to incentivize their participation in the study effectively.<br>Some strategies we used to overcome this challenge include:</p>
+        <ul class="unordered-list">
+          <li>Offering non-monetary incentives (InvolveMINT Credits)</li>
+          <li>Offering flexible scheduling</li>
+             <li>Collaborating with student organizations and student-run community gardens</li>
+           <li>Maintaining regular communication and follow-ups</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  
+
+  <section class="case-study-container">
+    <h1>Programming the Front-End</h1>
+    <div class="case-study-content">
+      <div class="case-study-description">
+        <p>Finally, I used my Figma mockup to transport the submission screens, the tagging screens, and the search screens into an interactive web-based system. Using html, CSS, and JavaScript, StoryWorlds came to life underneath my fingertips. My GitHub can be found <a href="https://github.com/saskiavhof" target="_blank">here</a>.</p>
+      </div>
+  </section>
+
+  <section class="back-to-home">
+    <a href="index.html" class="back-to-home-button">Take me back to home</a>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="email-container">
+        <span id="copyEmail" class="copy-symbol" onclick="copyToClipboard('sav78@pitt.edu')">sav78@pitt.edu</span>
+        <img id="copyIcon" src="icons/copy.svg" alt="Copy" onclick="copyToClipboard('sav78@pitt.edu')">
+      </div>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/saskia-van-t-hof/" target="_blank"><img src="icons/linkedin.svg" alt="LinkedIn"></a>
+        <a href="https://github.com/saskiavhof" target="_blank"><img src="icons/github.svg" alt="GitHub"></a>
+        <a href="https://www.instagram.com/saskia.makes/" target="_blank"><img src="icons/instagram.svg" alt="Instagram"></a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
