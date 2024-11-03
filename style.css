@@ -1,7 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&family=DM+Serif+Display&family=Inter:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 h1 {
   font-size: 40px;
@@ -39,7 +37,7 @@ p {
 
 body {
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
   padding-top: 100px; 
 }
 
@@ -62,16 +60,15 @@ nav {
 }
 
 #left-cell h1{
-  animation: slide-in-left 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.3s both;
+  /*animation: slide-in-left 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.3s both;*/
+  animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) .25s both;
 }
 
 #left-cell p{
-  animation: slide-in-left 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+  /*animation: slide-in-left 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;*/
+  animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1s both;
 }
 
-#left-cell h3{
-  animation: slide-in-left 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.7s both;
-}
 
 
 
@@ -83,6 +80,17 @@ nav {
   }
   100% {
     transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-bottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
     opacity: 1;
   }
 }
@@ -100,7 +108,7 @@ nav a {
   text-decoration: none;
   color: #5a62be; /* default color for non-bold links */
   font-weight: 500;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
   
 nav a:hover {
