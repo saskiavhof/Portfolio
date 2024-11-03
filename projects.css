@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&family=DM+Serif+Display&family=Inter:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap');
 
 h1 {
@@ -25,8 +24,8 @@ h3{
   font-size: 22px;
   margin-bottom: 10px;
   text-align: left;
-  /*font-family: 'Ubuntu', sans-serif;*/
-  font-weight: 500;
+  /*font-weight: 500;*/
+  font-weight: 700;
 }
 
 p {
@@ -37,9 +36,18 @@ p {
   color: black;
 }
 
+p {
+  font-size: 16px;
+  line-height: 28px;
+  margin-bottom: 10px;
+  text-align: left; /* Center the text horizontally */
+  color: black;
+}
+
+
 body {
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Inter", sans-serif;
 }
   
 nav {
@@ -224,10 +232,10 @@ footer {
   padding: 20px;
   box-sizing: border-box;
 }
-
+/*
 .overview-grid h3{
   font-weight: 700;
-}
+}*/
 
 .case-study-container{
   margin: auto;
