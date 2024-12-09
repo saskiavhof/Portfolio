@@ -370,9 +370,9 @@ footer {
 }
 
 .logo img {
-  max-height: 100%; /* Ensure the logo scales to match the details' height */
-  height: 100%; /* Logo scales to match parent height */
-  object-fit: contain; /* Ensure the logo retains its aspect ratio */
+  height: 60px;
+  width: auto;
+  object-fit: contain;
 }
 
 .position-details {
