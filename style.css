@@ -15,15 +15,15 @@ h2 {
   font-size: 14px;
   line-height: 28px;
   margin-bottom: 10px;
-  text-align: left; /* Center the text horizontally */
+  text-align: left;
   color: #7e7f83;
+  font-weight: 400;
 }
 
 h3{
   font-size: 22px;
   margin-bottom: 10px;
   text-align: left;
-  /*font-family: 'Ubuntu', sans-serif;*/
   font-weight: 700;
 }
 
