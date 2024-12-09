@@ -370,8 +370,8 @@ footer {
 }
 
 .logo img {
-  height: 60px;
-  width: 60px;
+  height: 100px;
+  width: 100px;
   object-fit: contain;
 }
 
@@ -445,6 +445,11 @@ footer {
 
 /* Media query for smaller screens */
 @media (max-width: 768px) {
+
+  .right-section {
+    float: center;
+  }
+  
   .project-title {
     flex-direction: column; /* Stack items vertically on smaller screens */
     align-items: center;
@@ -474,5 +479,11 @@ footer {
 
   nav #portfolio {
     display: none;
+  }
+
+  .logo img {
+    height: 60px;
+    width: 60px;
+    object-fit: contain;
   }
 }
