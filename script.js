@@ -2,10 +2,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const selectedWorksItems = document.querySelectorAll(".selected-works-item");
     
   const projectPages = [
-    'broadcom-experience.html',
-    'pogoh-bike-analysis.html',
-    'involvemint-marketplace.html',
-    'storyworlds-narratives.html',
+    'broadcom.html',
+    'pogoh.html',
+    'involvemint.html',
+    'storyworlds.html',
   ];
 
   selectedWorksItems.forEach((item, index) => {
