@@ -4,7 +4,7 @@ function openResume() {
 
 document.addEventListener("DOMContentLoaded", function () {
   const selectedWorksItems = document.querySelectorAll(".selected-works-item");
-  const projectPages = ['project1.html', 'project2.html', 'project3.html', 'project4.html', 'project5.html', 'project6.html'];
+  const projectPages = ['broadcom.html', 'pogoh.html', 'involvemint.html', 'storyworlds.html',];
 
   selectedWorksItems.forEach((item, index) => {
     const h2Element = item.querySelector('h2');
