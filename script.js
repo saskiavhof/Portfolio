@@ -1,15 +1,18 @@
-function openResume() {
-    window.open('https://drive.google.com/file/d/1yY4Vplgs6Vw6-er-CuDL3v5XwzhcccEJ/view?usp=sharing', '_blank');
-  }
-
 document.addEventListener("DOMContentLoaded", function () {
   const selectedWorksItems = document.querySelectorAll(".selected-works-item");
-  const projectPages = ['broadcom.html', 'pogoh.html', 'involvemint.html', 'storyworlds.html',];
+    
+  const projectPages = [
+    'broadcom-experience.html',
+    'pogoh-bike-analysis.html',
+    'involvemint-marketplace.html',
+    'storyworlds-narratives.html',
+  ];
 
   selectedWorksItems.forEach((item, index) => {
     const h2Element = item.querySelector('h2');
     const imageElement = item.querySelector('.work-image');
 
+    // Navigate to the project page on H2 or image click
     h2Element.addEventListener('click', function () {
       navigateToProjectPage(index);
     });
@@ -19,6 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
+  // Navigation function
   function navigateToProjectPage(index) {
     if (index < projectPages.length) {
       window.location.href = projectPages[index];
@@ -38,10 +42,18 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   checkScroll();
-
   window.addEventListener("scroll", checkScroll);
 });
 
+// Open resume in a new tab
+function openResume() {
+  window.open(
+    'https://drive.google.com/file/d/1yY4Vplgs6Vw6-er-CuDL3v5XwzhcccEJ/view?usp=sharing',
+    '_blank'
+  );
+}
+
+// Copy email to clipboard
 function copyToClipboard(text) {
   const dummyTextarea = document.createElement('textarea');
   dummyTextarea.value = text;
