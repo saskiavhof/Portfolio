@@ -348,79 +348,48 @@ footer {
 
 
 
-
 .career-content {
   padding: 20px;
 }
 
 .experience-content {
   display: flex;
-  align-items: center;
+  align-items: center; /* Vertically align items */
   padding: 20px;
 }
 
 .position-container {
   display: flex;
-  gap: 20px;
-  align-items:flex-start;
-  padding: 10px; /* Add padding for better visibility */
+  gap: 20px; /* Spacing between logo and details */
+}
+
+.logo {
+  display: flex;
+  align-items: center; /* Center the logo vertically */
+  justify-content: center; /* Optional: Horizontal centering */
 }
 
 .logo img {
-  max-width: 60px;
-  max-height: 100%;
-  align-self: center;
+  max-height: 100%; /* Ensure the logo scales to match the details' height */
+  height: 100%; /* Logo scales to match parent height */
+  object-fit: contain; /* Ensure the logo retains its aspect ratio */
 }
 
-.company-info {
+.position-details {
   display: flex;
-  align-items: center;
-  height: 25px;
-  margin-top: -8px;
+  flex-direction: column; /* Stack h3, p, h2 vertically */
+  justify-content: center; /* Center all items within the container */
 }
 
 .company-info h3 a {
-  text-decoration: none; /* Keep the underline for the link */
-  color: black; /* Change the font color to black */
+  text-decoration: none;
+  color: black;
   font-size: 22px;
 }
 
-
-.company-info a:hover{
+.company-info a:hover {
   text-decoration: underline;
 }
-
-.position-bottom {
-  display: flex;
-  flex-direction: column;
-  margin-top: 16px;
-}
-
-.position {
-  font-size: 18px;
-  margin: 0;
-}
-
-.year {
-  font-size: 18px;
-  color: #7e7f83;
-  margin-left: 7px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .project-container {
   padding: 20px; /* Add padding to the project-container */
