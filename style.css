@@ -377,18 +377,9 @@ footer {
 
 .position-details {
   display: flex;
-  flex-direction: column; /* Stack h3, p, h2 vertically */
-  justify-content: center; /* Center all items within the container */
-}
-
-.company-info h3 a {
-  text-decoration: none;
-  color: black;
-  font-size: 22px;
-}
-
-.company-info a:hover {
-  text-decoration: underline;
+  flex-direction: column; 
+  justify-content: center;
+  margin-bottom: 5px;
 }
 
 .project-container {
