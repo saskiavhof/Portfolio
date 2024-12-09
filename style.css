@@ -379,7 +379,10 @@ footer {
   display: flex;
   flex-direction: column; 
   justify-content: center;
-  margin-bottom: 5px;
+}
+
+.position-details p{
+  margin: 0px;
 }
 
 .project-container {
