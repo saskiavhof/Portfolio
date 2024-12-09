@@ -371,7 +371,7 @@ footer {
 
 .logo img {
   height: 60px;
-  width: auto;
+  width: 60px;
   object-fit: contain;
 }
 
