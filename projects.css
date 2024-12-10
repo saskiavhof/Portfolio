@@ -367,9 +367,18 @@ footer {
 
 /* Media query for smaller screens */
 @media (max-width: 768px) {
+
+    .right-section {
+    float: none; /* Remove float property */
+    display: flex;
+    justify-content: center; /* Center items horizontally in the right-section */
+    align-items: center; /* Vertically align if necessary */
+    width: 100%; /* Ensure it spans the full width */
+  }
+  
   .project-title {
     flex-direction: column; /* Stack items vertically on smaller screens */
-    align-items: center;
+    align-items: left;
   }
 
   .project-problem {
