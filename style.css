@@ -354,6 +354,7 @@ footer {
   cursor: pointer;
   width: 20px;
   height: 20px;
+  filter: brightness(0) invert(1);
 }
 
 .social-icons {
@@ -361,11 +362,11 @@ footer {
   gap: 15px;
 }
 
-
 .social-icons img {
   width: 30px;
   height: 30px;
   transition: transform 0.2s ease-in;
+  filter: brightness(0) invert(1);
 }
 
 .social-icons img:hover {
